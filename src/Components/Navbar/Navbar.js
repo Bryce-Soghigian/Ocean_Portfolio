@@ -19,6 +19,8 @@ text-shadow: 2px 2px 2px black;
 :hover{
     text-decoration:underline;
     transform: rotate(10deg);
+    font-style: italic;
+    
     transition:.5s;
 }
 @media(max-width:800px){

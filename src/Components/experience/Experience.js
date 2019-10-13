@@ -43,7 +43,14 @@ color:#EAD174;
 text-shadow: 2px 2px 2px black;
 font-family: 'Changa One';
 
-
+::selection {
+    background:#DA5F7C;
+    color:#EF965B;
+}
+::-moz-selection {
+ background:#DA5F7C;
+ color:#EF965B;
+}
 `
 const IMG =styled.img`
 width:50%;
