@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
+import {FaAngleDoubleDown} from "react-icons/fa";
+import {IconButton} from '@chakra-ui/core'
 import Flame from './Flame.mp4';
 // import Spiral from './Spiral.mp4'
 const IntroDiv = styled.div`
@@ -11,22 +13,21 @@ align-items:center;
 width:100%;
 height:600px;
 `
-const Button = styled.button`
-width: 100px;
-height:100px;
-border-style:solid;
-border-color:black;
+// const Button = styled.button`
+// width: 100px;
+// height:100px;
+// border-style:solid;
+// border-color:black;
 
-border-radius:100%;
-text-size-adjust:20px;
-color:white;
-background-image:linear-gradient(90deg, rgb(252, 108, 53),rgb(170, 18, 159));
-`
+// border-radius:100%;
+// text-size-adjust:20px;
+// color:white;
+// background-image:linear-gradient(90deg, rgb(252, 108, 53),rgb(170, 18, 159));
+// `
 const ScrollDiv = styled.div`
 display:flex;
 justify-content:center;
 border:black;
-
 border-width: 3px;
 z-index:4;
 align-items:center;
@@ -36,20 +37,23 @@ align-items:center;
 
 `
 const H1 = styled.h1`
+font-size: 2.5rem;
 color:#FFFA82;
 text-shadow: 2px 2px 2px black;
+font-family: 'Caveat';
 :hover{
     font-style: italic;
-    transform: scale(1.2);
+    transform: scale(1.75);
     transition:.5s;
 }
 `
 const H3 = styled.h3`
 color:#FFFA82;
 text-shadow: 2px 2px 2px black;
+font-family: 'Caveat';
 :hover{
     font-style: italic;
-    transform: scale(1.2);
+    transform: scale(1.75);
     transition:.5s;
 }
 @media(max-width:500px){
@@ -65,7 +69,15 @@ export default function Intro() {
 
      </IntroDiv>
      <ScrollDiv>
-         <Button></Button>
+     {/* FaAngleDoubleDown */}
+     <IconButton
+          
+          variant="solid"
+          variantColor="pink"
+          aria-label="Call Sage"
+          fontSize="20px"
+          icon={FaAngleDoubleDown}
+/>
      </ScrollDiv>
      </div>
     )

@@ -21,7 +21,15 @@ text-shadow: 2px 2px 2px black;
     transform: rotate(10deg);
     transition:.5s;
 }
-
+@media(max-width:800px){
+    
+}
+@media(max-width:500px){
+    font-size: 1rem;
+}
+@media(max-width:375px){
+    font-size: 1rem;
+}
 `
 export default function Navbar() {
     return (
