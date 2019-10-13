@@ -11,6 +11,30 @@ align-items:center;
 width:100%;
 height:600px;
 `
+const Button = styled.button`
+width: 100px;
+height:100px;
+border-style:solid;
+border-color:black;
+
+border-radius:100%;
+text-size-adjust:20px;
+color:white;
+background-image:linear-gradient(90deg, rgb(252, 108, 53),rgb(170, 18, 159));
+`
+const ScrollDiv = styled.div`
+display:flex;
+justify-content:center;
+border:black;
+
+border-width: 3px;
+z-index:4;
+align-items:center;
+  height: 60px;
+  width: 100%;
+  background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
+
+`
 const H1 = styled.h1`
 color:#FFFA82;
 text-shadow: 2px 2px 2px black;
@@ -34,10 +58,15 @@ text-shadow: 2px 2px 2px black;
 `
 export default function Intro() {
     return (
+    <div>
      <IntroDiv>
          <H1>Bryce Soghigian</H1>
          <H3>Full Stack Engineer</H3>
 
      </IntroDiv>
+     <ScrollDiv>
+         <Button></Button>
+     </ScrollDiv>
+     </div>
     )
 }

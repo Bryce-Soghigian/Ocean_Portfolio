@@ -16,6 +16,11 @@ text-decoration:none;
 text-transform:uppercase;
 color:#F2F8FD;
 text-shadow: 2px 2px 2px black;
+:hover{
+    text-decoration:underline;
+    transform: rotate(10deg);
+    transition:.5s;
+}
 
 `
 export default function Navbar() {
