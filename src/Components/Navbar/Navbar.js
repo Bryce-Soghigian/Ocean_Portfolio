@@ -44,9 +44,6 @@ export default function Navbar() {
             <Navitem to = "/Projects">
             Projects
             </Navitem>
-            <Navitem to = "/Skills">
-            Skills
-            </Navitem>
             <Navitem to = "/Contact">
             Contact
             </Navitem>

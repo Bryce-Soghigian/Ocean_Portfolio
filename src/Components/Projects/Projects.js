@@ -111,7 +111,7 @@ export default function Projects() {
                 <H1>Projects</H1>
                 <Tabs variant="soft-rounded" isFitted align="center" variantColor="pink" >
   <TabList>
-    <Tab>Crime Stats</Tab>
+    <Tab>Crime-Stats</Tab>
     <Tab>UseTechStuff</Tab>
     <Tab>TipsEase</Tab>
   </TabList>
