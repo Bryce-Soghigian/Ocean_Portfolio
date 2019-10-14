@@ -68,7 +68,6 @@ class TabsRender extends Component {
     } else if(this.state.activeTab === 1) {
       return (
         <div>
-        ////////////////////
         <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: 'black', height: '176px', background: 'url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE-naxfTaCgG1a8rmsmFkDixXn4fwKqrftkhAlMP16Saepn_Xr1g) center / cover'}} >My Portfolio</CardTitle>
             <CardText>

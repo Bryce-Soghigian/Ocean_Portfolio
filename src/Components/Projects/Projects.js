@@ -14,7 +14,7 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 width:100%;
-height:665px;
+height:700px;
 
 `
 const ScrollDiv = styled.div`
@@ -108,7 +108,7 @@ export default function Projects() {
     return (
         <div>
             <ProjectDiv>
-                {/*  */}
+                <H1>Projects</H1>
                 <Tabs variant="soft-rounded" isFitted align="center" variantColor="pink" >
   <TabList>
     <Tab>Crime Stats</Tab>
