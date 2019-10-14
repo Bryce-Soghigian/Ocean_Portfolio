@@ -18,7 +18,7 @@ color:#F2F8FD;
 text-shadow: 2px 2px 2px black;
 :hover{
     text-decoration:underline;
-    transform: rotate(10deg);
+    transform: rotate(3deg);
     font-style: italic;
     
     transition:.5s;
@@ -31,6 +31,19 @@ text-shadow: 2px 2px 2px black;
 }
 @media(max-width:375px){
     font-size: 1rem;
+}
+`
+const A = styled.a`
+text-decoration:none;
+text-transform:uppercase;
+color:#F2F8FD;
+text-shadow: 2px 2px 2px black;
+:hover{
+    text-decoration:underline;
+    transform: rotate(3deg);
+    font-style: italic;
+    
+    transition:.5s;
 }
 `
 export default function Navbar() {
@@ -47,9 +60,8 @@ export default function Navbar() {
             <Navitem to = "/Contact">
             Contact
             </Navitem>
-            <Navitem to = "/Resume">
-                Resume
-            </Navitem>
+            <A href ="./r.pdf" download="Bryce Soghigian's Resume">Resume</A>
+       
         </NavContainer>
     )
 }
