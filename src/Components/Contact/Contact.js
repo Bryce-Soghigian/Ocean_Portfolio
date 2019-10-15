@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { FaAngleDoubleUp,FaLinkedin } from 'react-icons/fa';
 import { GoMarkGithub } from "react-icons/go"
 import {IconButton} from '@chakra-ui/core'
@@ -41,6 +43,12 @@ align-items:center;
 
 `
 export default function Contact() {
+
+    let Link       = Scroll.Link;
+let Element    = Scroll.Element;
+let Events     = Scroll.Events;
+let scroll     = Scroll.animateScroll;
+let scrollSpy  = Scroll.scrollSpy;
     return (
         <div>
             <ContactDiv>
@@ -52,7 +60,7 @@ export default function Contact() {
             <ScrollDiv>
      {/* FaAngleDoubleDown */}
      <IconButton
-          
+          href="https://www.linkedin.com/in/bryce-soghigian-0556a9184/"
           variant="solid"
           variantColor="pink"
           aria-label="Call Sage"
@@ -68,7 +76,7 @@ export default function Contact() {
           icon={FaAngleDoubleUp}
 />
 <IconButton
-          
+          href="https://github.com/Bryce-Soghigian"
           variant="solid"
           variantColor="pink"
           aria-label="Call Sage"

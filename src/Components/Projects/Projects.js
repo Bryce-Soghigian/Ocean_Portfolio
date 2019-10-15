@@ -129,9 +129,9 @@ export default function Projects() {
 
                 </Description>
                 <Buttons>
-                    <Button>PVD</Button>
-                    <Button>CODE</Button>
-                    <Button>DEMO</Button>
+                    <Button href="https://www.notion.so/Crime-Statistics-for-Travelers-a7e69847024d4cdc85aaf85cb413df71">PVD</Button>
+                    <Button href="https://github.com/Lambda-School-Labs/crime-statistics-for-travelers-fe">CODE</Button>
+                    <Button href="https://crime-statistics-master.netlify.com/">DEMO</Button>
                 </Buttons>
                 </Card>
                 </Center>
@@ -146,8 +146,8 @@ export default function Projects() {
                 </Description>
                 <Buttons>
                     
-                    <Button>CODE</Button>
-                    <Button>documentation</Button>
+                    <Button href="https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE">CODE</Button>
+                    <Button href="https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE/blob/master/README.md">documentation</Button>
                 </Buttons>
                 </Card>
                 </Center>
@@ -165,8 +165,8 @@ export default function Projects() {
                      </Description>
                 <Buttons>
                     
-                    <Button>CODE</Button>
-                    <Button>Demo</Button>
+                    <Button href="https://github.com/bw-tipsease/TipsEaseFE">CODE</Button>
+                    <Button href="https://tipsease-fe-test.netlify.com">Demo</Button>
                 </Buttons>
                 </Card>
                 </Center>
