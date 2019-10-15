@@ -51,6 +51,9 @@ font-family: 'Caveat';
     transform: scale(1.75);
     transition:.5s;
 }
+::selection{
+    background:black;
+}
 ::-moz-selection {
  background:black;
 
@@ -66,6 +69,7 @@ color:white;
 }
 :hover{
     transform: scale(1.75);
+    transition:1s;
     color:#0077B5;
 }
 `
@@ -77,6 +81,7 @@ color:white;
 }
 :hover{
     transform: scale(1.75);
+    transition:.7s;
     color:black;
 }
 `
