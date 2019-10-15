@@ -1,9 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
-import {FaAngleDoubleDown} from "react-icons/fa";
+import { FaGithubSquare,FaLinkedin } from 'react-icons/fa';
+
 import {IconButton} from '@chakra-ui/core'
 import Flame from './Flame.mp4';
 // import Spiral from './Spiral.mp4'
+const IconDiv = styled.div`
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+width:20%;
+
+`
 const IntroDiv = styled.div`
     background-image:linear-gradient(45deg, rgba(229, 128, 66, 0.45) 0%, rgba(229, 128, 66, 0.45) 25%,rgba(212, 160, 112, 0.45) 25%, rgba(212, 160, 112, 0.45) 50%,rgba(195, 191, 157, 0.45) 50%, rgba(195, 191, 157, 0.45) 75%,rgba(178, 223, 203, 0.45) 75%, rgba(178, 223, 203, 0.45) 100%),linear-gradient(135deg, rgb(251, 248, 117) 0%, rgb(251, 248, 117) 25%,rgb(246, 167, 110) 25%, rgb(246, 167, 110) 50%,rgb(240, 85, 102) 50%, rgb(240, 85, 102) 75%,rgb(235, 4, 95) 75%, rgb(235, 4, 95) 100%);
     display:flex;
@@ -60,13 +68,27 @@ font-family: 'Caveat';
    
 }
 `
+const A = styled.a`
+text-decoration:none;
+color:#FFFA82;
+:visited{
+    color:#FFFA82;
+}
+:hover{
+    color:white;
+}
+
+`
 export default function Intro() {
     return (
     <div>
      <IntroDiv>
          <H1>Bryce Soghigian</H1>
          <H3>Full Stack Engineer</H3>
-
+        <IconDiv>
+            <A href="https://www.linkedin.com/in/bryce-soghigian-0556a9184/" target="_blank"><FaLinkedin/></A>
+            <A href="https://github.com/Bryce-Soghigian" target="_blank"><FaGithubSquare/></A>
+        </IconDiv>
      </IntroDiv>
 
      </div>
