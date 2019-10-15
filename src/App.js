@@ -6,8 +6,8 @@ import Projects from './Components/Projects/Projects';
 import Intro from './Components/Intro/Intro';
 import Skills from './Components/Skills/Skills'
 import { ThemeProvider } from "@chakra-ui/core";
-import { expression } from '@babel/template';
 import Experience from './Components/experience/Experience';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
       <Intro/>
       <Experience/>
       <Projects/>
-<Route exact path ="/Projects" component={Projects}/>
-<Route exact path = "/Skills" component={Skills}/>
+      <Contact/>
+
     </div>
     </ThemeProvider>
   );

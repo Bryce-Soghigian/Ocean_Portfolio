@@ -71,7 +71,6 @@ export default function Intro() {
      <ScrollDiv>
      {/* FaAngleDoubleDown */}
      <IconButton
-          
           variant="solid"
           variantColor="pink"
           aria-label="Call Sage"
