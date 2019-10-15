@@ -43,12 +43,10 @@ align-items:center;
 
 `
 export default function Contact() {
+   const scrollUp = () => {
+        scroll.scrollToTop(); 
+    };
 
-    let Link       = Scroll.Link;
-let Element    = Scroll.Element;
-let Events     = Scroll.Events;
-let scroll     = Scroll.animateScroll;
-let scrollSpy  = Scroll.scrollSpy;
     return (
         <div>
             <ContactDiv>
@@ -68,7 +66,7 @@ let scrollSpy  = Scroll.scrollSpy;
           icon={FaLinkedin}
 />
      <IconButton
-          
+          onClick={scrollUp}
           variant="solid"
           variantColor="pink"
           aria-label="Call Sage"
