@@ -17,24 +17,15 @@ width:100%;
 height:700px;
 
 `
-const ScrollDiv = styled.div`
-display:flex;
-justify-content:center;
-border:black;
-border-width: 3px;
-z-index:4;
-align-items:center;
-  height: 60px;
-  width: 100%;
-  background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
 
-`
 const Card = styled.div`
 width:50%;
 border-style:solid;
-border-color:#EF965A;
-background-image:linear-gradient(45deg, rgba(229, 128, 66, 0.45) 0%, rgba(229, 128, 66, 0.45) 25%,rgba(212, 160, 112, 0.45) 25%, rgba(212, 160, 112, 0.45) 50%,rgba(195, 191, 157, 0.45) 50%, rgba(195, 191, 157, 0.45) 75%,rgba(178, 223, 203, 0.45) 75%, rgba(178, 223, 203, 0.45) 100%),linear-gradient(135deg, rgb(251, 248, 117) 0%, rgb(251, 248, 117) 25%,rgb(246, 167, 110) 25%, rgb(246, 167, 110) 50%,rgb(240, 85, 102) 50%, rgb(240, 85, 102) 75%,rgb(235, 4, 95) 75%, rgb(235, 4, 95) 100%);
-  
+border-color:#E94354;
+/* background-image:linear-gradient(45deg, rgba(229, 128, 66, 0.45) 0%, rgba(229, 128, 66, 0.45) 25%,rgba(212, 160, 112, 0.45) 25%, rgba(212, 160, 112, 0.45) 50%,rgba(195, 191, 157, 0.45) 50%, rgba(195, 191, 157, 0.45) 75%,rgba(178, 223, 203, 0.45) 75%, rgba(178, 223, 203, 0.45) 100%),linear-gradient(135deg, rgb(251, 248, 117) 0%, rgb(251, 248, 117) 25%,rgb(246, 167, 110) 25%, rgb(246, 167, 110) 50%,rgb(240, 85, 102) 50%, rgb(240, 85, 102) 75%,rgb(235, 4, 95) 75%, rgb(235, 4, 95) 100%);
+   */
+  background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
+
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -42,27 +33,44 @@ align-items:center;
 
 `
 const H1 = styled.h1`
-color:#EAD174;
+color:white;
 text-shadow: 2px 2px 2px black;
 font-family: 'Caveat';
-
-`
-const H2= styled.h2`
-color:#DA5F7C;
-text-shadow: 2px 2px 2px black;
-font-family: 'Caveat';
-`
-const Description = styled.p`
-color:#EAD174;
-text-shadow: 2px 2px 2px #F0A524;
-font-family: 'Changa One';
 ::selection {
-    background:#DA5F7C;
-    color:#EF965B;
+    background:black;
+    
 }
 ::-moz-selection {
- background:#DA5F7C;
- color:#EF965B;
+ background:black;
+
+}
+`
+const H2= styled.h2`
+color:white;
+font-style: bold;
+/* text-shadow: 2px 2px 2px black; */
+font-family: 'Caveat';
+::selection {
+    background:black;
+    
+}
+::-moz-selection {
+ background:black;
+
+}
+`
+const Description = styled.p`
+color:white;
+/* color:#EAD174; */
+text-shadow: 1px 1px 1px black;
+font-family: 'Changa One';
+::selection {
+    background:black;
+    
+}
+::-moz-selection {
+ background:black;
+
 }
 
 `
@@ -96,9 +104,9 @@ vertical-align:center;
 height:25px;
 border-radius:5%;
 border-style:solid;
-border-color:#EF965A;
+border-color:black;
 background:#EAD174;
-color:black;
+color:white;
 /* color:#DA5F7C; */
 
 font-family:'Changa One';
