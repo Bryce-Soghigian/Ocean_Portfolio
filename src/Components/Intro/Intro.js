@@ -62,6 +62,7 @@ color:#FFFA82;
     color:#FFFA82;
 }
 :hover{
+    transform: scale(1.75);
     color:white;
 }
 
