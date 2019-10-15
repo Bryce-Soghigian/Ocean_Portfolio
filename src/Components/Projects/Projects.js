@@ -75,8 +75,23 @@ display:flex;
 flex-direction:row;
 justify-content:space-evenly;
 `
-const Button = styled.button`
+const A = styled.a`
+text-decoration:none;
+:visited{
+    color:black;
+}
+`
+const Button = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+padding-right:2px;
+padding-left:2px;
+font-size:.8rem;
 text-transform:uppercase;
+text-decoration:none;
+text-align:center;
+vertical-align:center;
 height:25px;
 border-radius:5%;
 border-style:solid;
@@ -129,9 +144,9 @@ export default function Projects() {
 
                 </Description>
                 <Buttons>
-                    <Button href="https://www.notion.so/Crime-Statistics-for-Travelers-a7e69847024d4cdc85aaf85cb413df71">PVD</Button>
-                    <Button href="https://github.com/Lambda-School-Labs/crime-statistics-for-travelers-fe">CODE</Button>
-                    <Button href="https://crime-statistics-master.netlify.com/">DEMO</Button>
+                    <Button><A href="https://www.notion.so/Crime-Statistics-for-Travelers-a7e69847024d4cdc85aaf85cb413df71" target="_blank">PVD</A></Button>
+                    <Button ><A href="https://github.com/Lambda-School-Labs/crime-statistics-for-travelers-fe" target="_blank">CODE</A></Button>
+                    <Button><A href="https://crime-statistics-master.netlify.com/" target="_blank">Demo</A></Button>
                 </Buttons>
                 </Card>
                 </Center>
@@ -146,8 +161,8 @@ export default function Projects() {
                 </Description>
                 <Buttons>
                     
-                    <Button href="https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE">CODE</Button>
-                    <Button href="https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE/blob/master/README.md">documentation</Button>
+                    <Button><A href="https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE" target="_blank">Code</A></Button>
+                    <Button><A href="https://github.com/BW-UseMyTechStuff/UseMyTechStuff-BE/blob/master/README.md" target="_blank">Documentation</A></Button>
                 </Buttons>
                 </Card>
                 </Center>
