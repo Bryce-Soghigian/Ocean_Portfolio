@@ -29,13 +29,13 @@ align-items:center;
 const H1 = styled.h1`
 color:#EAD174;
 text-shadow: 2px 2px 2px black;
-font-family: 'Caveat';
+/* font-family: 'Changa One'; */
 
 `
 const H2 = styled.h2`
 color:#DA5F7C;
 text-shadow: 2px 2px 2px black;
-font-family: 'Caveat';
+/* font-family: 'Changa One'; */
 
 `
 const Description = styled.p`

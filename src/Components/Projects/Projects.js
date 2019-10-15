@@ -54,7 +54,7 @@ font-family: 'Caveat';
 `
 const Description = styled.p`
 color:#EAD174;
-text-shadow: 2px 2px 2px black;
+text-shadow: 2px 2px 2px #F0A524;
 font-family: 'Changa One';
 ::selection {
     background:#DA5F7C;
@@ -100,7 +100,7 @@ border-color:#EF965A;
 background:#EAD174;
 color:black;
 /* color:#DA5F7C; */
-text-shadow:2px 2px 2px #DA5F7C;
+
 font-family:'Changa One';
 :hover{
     
