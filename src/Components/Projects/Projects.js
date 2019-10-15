@@ -77,6 +77,7 @@ justify-content:space-evenly;
 `
 const A = styled.a`
 text-decoration:none;
+color:black;
 :visited{
     color:black;
 }
