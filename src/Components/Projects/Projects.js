@@ -180,8 +180,8 @@ export default function Projects() {
                      </Description>
                 <Buttons>
                     
-                    <Button href="https://github.com/bw-tipsease/TipsEaseFE">CODE</Button>
-                    <Button href="https://tipsease-fe-test.netlify.com">Demo</Button>
+                    <Button><A href="https://github.com/bw-tipsease/TipsEaseFE" target="_blank">Code</A></Button>
+                    <Button><A href="https://tipsease-fe-test.netlify.com" target="_blank">Demo</A></Button>
                 </Buttons>
                 </Card>
                 </Center>
