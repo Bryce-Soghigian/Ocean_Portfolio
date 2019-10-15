@@ -126,7 +126,13 @@ align-items:center;
 `
 const Red = styled.p`
 color:black;
-text-shadow:2px 2px 2px #DA5F7C;
+text-shadow:2px 2px 2px #DA5F7C;::selection{
+    background:white;
+}
+::-moz-selection {
+ background:white;
+
+}
 `
 export default function Projects() {
     return (

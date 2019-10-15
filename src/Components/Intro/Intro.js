@@ -33,7 +33,7 @@ height:600px;
 
 const H1 = styled.h1`
 font-size: 2.5rem;
-color:#FFFA82;
+color:white;
 text-shadow: 2px 2px 2px black;
 font-family: 'Caveat';
 :hover{
@@ -43,7 +43,7 @@ font-family: 'Caveat';
 }
 `
 const H3 = styled.h3`
-color:#FFFA82;
+color:white;
 text-shadow: 2px 2px 2px black;
 font-family: 'Caveat';
 :hover{
@@ -51,22 +51,41 @@ font-family: 'Caveat';
     transform: scale(1.75);
     transition:.5s;
 }
+::selection{
+    background:black;
+}
+::-moz-selection {
+ background:black;
+
+}
 @media(max-width:500px){
    
 }
 `
-const A = styled.a`
-text-decoration:none;
-color:#FFFA82;
+const Linked = styled.a`
+color:white;
 :visited{
-    color:#FFFA82;
+    color:white;
 }
 :hover{
     transform: scale(1.75);
+    transition:1s;
+    color:#0077B5;
+}
+`
+const Github = styled.a`
+color:white;
+:visited{
+    
     color:white;
 }
-
+:hover{
+    transform: scale(1.75);
+    transition:.7s;
+    color:black;
+}
 `
+
 export default function Intro() {
     return (
     <div>
@@ -74,8 +93,8 @@ export default function Intro() {
          <H1>Bryce Soghigian</H1>
          <H3>Full Stack Engineer</H3>
         <IconDiv>
-            <A href="https://www.linkedin.com/in/bryce-soghigian-0556a9184/" target="_blank"><FaLinkedin/></A>
-            <A href="https://github.com/Bryce-Soghigian" target="_blank"><FaGithubSquare/></A>
+            <Linked href="https://www.linkedin.com/in/bryce-soghigian-0556a9184/" target="_blank"><FaLinkedin/></Linked>
+            <Github href="https://github.com/Bryce-Soghigian" target="_blank"><FaGithubSquare/></Github>
         </IconDiv>
      </IntroDiv>
 

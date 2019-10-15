@@ -17,9 +17,9 @@ height:600px;
 `
 const A = styled.a`
 text-decoration:none;
-color:#FFFA82;
+color:black;
 :visited{
-    color:#FFFA82;
+    color:black;
 }
 :hover{
     transform: scale(1.75);
@@ -54,6 +54,29 @@ align-items:center;
   background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
 
 `
+const Linked = styled.a`
+color:white;
+:visited{
+    color:white;
+}
+:hover{
+    transform: scale(1.75);
+    transition:1s;
+    color:#0077B5;
+}
+`
+const Github = styled.a`
+color:white;
+:visited{
+    
+    color:white;
+}
+:hover{
+    transform: scale(1.75);
+    transition:.7s;
+    color:black;
+}
+`
 export default function Contact() {
    const scrollUp = () => {
         scroll.scrollToTop(); 
@@ -69,7 +92,7 @@ export default function Contact() {
             </ContactDiv>
             <ScrollDiv>
      {/* FaAngleDoubleDown */}
-     <A href="https://www.linkedin.com/in/bryce-soghigian-0556a9184/" target="_blank"><FaLinkedin/></A>
+     <Linked href="https://www.linkedin.com/in/bryce-soghigian-0556a9184/" target="_blank"><FaLinkedin/></Linked>
      <IconButton
           onClick={scrollUp}
           variant="solid"
@@ -78,7 +101,7 @@ export default function Contact() {
           fontSize="20px"
           icon={FaAngleDoubleUp}
 />
-<A href="https://github.com/Bryce-Soghigian" target="_blank"><FaGithubSquare/></A>
+<Github href="https://github.com/Bryce-Soghigian" target="_blank"><FaGithubSquare/></Github>
 
 
      </ScrollDiv>
