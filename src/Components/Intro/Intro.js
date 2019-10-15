@@ -2,14 +2,12 @@ import React from 'react'
 import styled from 'styled-components';
 import { FaGithubSquare,FaLinkedin } from 'react-icons/fa';
 
-import {IconButton} from '@chakra-ui/core'
-import Flame from './Flame.mp4';
-// import Spiral from './Spiral.mp4'
 const IconDiv = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:space-evenly;
 width:20%;
+/* @media{} */
 
 `
 const IntroDiv = styled.div`
@@ -32,18 +30,7 @@ height:600px;
 // color:white;
 // background-image:linear-gradient(90deg, rgb(252, 108, 53),rgb(170, 18, 159));
 // `
-const ScrollDiv = styled.div`
-display:flex;
-justify-content:center;
-border:black;
-border-width: 3px;
-z-index:4;
-align-items:center;
-  height: 60px;
-  width: 100%;
-  background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
 
-`
 const H1 = styled.h1`
 font-size: 2.5rem;
 color:#FFFA82;

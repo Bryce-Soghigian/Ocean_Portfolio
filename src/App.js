@@ -88,8 +88,8 @@ function App() {
             <Navitem href="#Contact">
             Contact
             </Navitem>
-            <A href ="r.pdf" download>Resume</A>
-       
+            {/* <A href ="r.pdf" download>Resume</A>
+        */}
         </NavContainer>
       <Intro/>
       <ScrollDiv>
