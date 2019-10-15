@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import styled from 'styled-components';
 
 const NavContainer = styled.div`
@@ -11,7 +11,7 @@ align-items:center;
 justify-content:space-evenly;
 flex-direction:row;
 `
-const Navitem = styled(Link)`
+const Navitem = styled(AnchorLink)`
 text-decoration:none;
 text-transform:uppercase;
 color:#F2F8FD;
@@ -48,16 +48,20 @@ text-shadow: 2px 2px 2px black;
 `
 export default function Navbar() {
     return (
-
+        // to="section1"
+        // spy={true}
+        // smooth={true}
+        // offset={-70}
+        // duration= {500}
 
         <NavContainer>
-            <Navitem to="/Experience">
+            <Navitem href="Experience">
             Experience
             </Navitem>
-            <Navitem to = "/Projects">
+            <Navitem href="Projects">
             Projects
             </Navitem>
-            <Navitem to = "/Contact">
+            <Navitem href="Contact">
             Contact
             </Navitem>
             <A href ="./r.pdf" download="Bryce Soghigian's Resume">Resume</A>
