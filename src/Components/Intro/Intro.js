@@ -68,16 +68,7 @@ export default function Intro() {
          <H3>Full Stack Engineer</H3>
 
      </IntroDiv>
-     <ScrollDiv>
-     {/* FaAngleDoubleDown */}
-     <IconButton
-          variant="solid"
-          variantColor="pink"
-          aria-label="Call Sage"
-          fontSize="20px"
-          icon={FaAngleDoubleDown}
-/>
-     </ScrollDiv>
+
      </div>
     )
 }

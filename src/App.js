@@ -1,6 +1,7 @@
 import React from 'react';
 import SmoothScroll from 'smooth-scroll';
 import CustomScroll from 'react-custom-scroll';
+import {FaAngleDoubleDown} from "react-icons/fa";
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Projects from './Components/Projects/Projects';
@@ -43,6 +44,18 @@ text-shadow: 2px 2px 2px black;
     font-size: 1rem;
 }
 `
+const ScrollDiv = styled.div`
+display:flex;
+justify-content:center;
+border:black;
+border-width: 3px;
+z-index:4;
+align-items:center;
+  height: 60px;
+  width: 100%;
+  background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
+
+`
 const A = styled.a`
 text-decoration:none;
 text-transform:uppercase;
@@ -61,7 +74,7 @@ function App() {
  
   return (
     <ThemeProvider>
-      <CustomScroll>
+      
     <div className="App">
 
      
@@ -79,19 +92,29 @@ function App() {
        
         </NavContainer>
       <Intro/>
+      <ScrollDiv>
+     
+<Navitem href="#Experience"><FaAngleDoubleDown/></Navitem>
+     </ScrollDiv>
       <section id="Experience">
       <Experience/>
+      <ScrollDiv>
+           <Navitem href="#Projects"><FaAngleDoubleDown/></Navitem>
+      </ScrollDiv>
       </section>
 
-     <section id="Projects"> <Projects 
-      id="Projects"
-      /></section>
-      <section id="Contact"><Contact
-       
-       /></section>
+     <section id="Projects"> 
+     <Projects/>
+     <ScrollDiv>
+           <Navitem href="#Contact"><FaAngleDoubleDown/></Navitem>
+      </ScrollDiv>
+     </section>
+      <section id="Contact">
+        <Contact/>
+        
+      </section>
 
     </div>
-    </CustomScroll>
     </ThemeProvider>
   );
 }

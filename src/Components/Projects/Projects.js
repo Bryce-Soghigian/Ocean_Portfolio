@@ -191,17 +191,7 @@ export default function Projects() {
 
 
             </ProjectDiv>
-            <ScrollDiv>
-     {/* FaAngleDoubleDown */}
-     <IconButton
-          
-          variant="solid"
-          variantColor="pink"
-          aria-label="Call Sage"
-          fontSize="20px"
-          icon={FaAngleDoubleDown}
-/>
-     </ScrollDiv>
+
         </div>
     )
 }

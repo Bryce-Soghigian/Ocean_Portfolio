@@ -55,18 +55,7 @@ font-family: 'Changa One';
 const IMG =styled.img`
 width:50%;
 `
-const ScrollDiv = styled.div`
-display:flex;
-justify-content:center;
-border:black;
-border-width: 3px;
-z-index:4;
-align-items:center;
-  height: 60px;
-  width: 100%;
-  background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
 
-`
 export default function Experience() {
     return (
         <div>
@@ -78,17 +67,7 @@ export default function Experience() {
                 <Description>Working as a fullstack developer to build out a communications application that has the combined functionality of Trello, Asana, Slack,and Google Calendar.The backend was built with NodeJS and the frontend is being built out with ReactJS.</Description>
                 </Card>
             </ExperienceDiv>
-            <ScrollDiv>
-     {/* FaAngleDoubleDown */}
-     <IconButton
-          
-          variant="solid"
-          variantColor="pink"
-          aria-label="Call Sage"
-          fontSize="20px"
-          icon={FaAngleDoubleDown}
-/>
-     </ScrollDiv>
+
         </div>
     )
 }

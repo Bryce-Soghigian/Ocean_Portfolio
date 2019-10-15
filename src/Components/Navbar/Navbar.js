@@ -55,7 +55,7 @@ export default function Navbar() {
         // duration= {500}
 
         <NavContainer>
-            <Navitem href="Experience">
+            <Navitem href="#Experience">
             Experience
             </Navitem>
             <Navitem href="Projects">
