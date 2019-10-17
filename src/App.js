@@ -25,11 +25,13 @@ flex-direction:row;
 const Navitem = styled(AnchorLink)`
 text-decoration:none;
 text-transform:uppercase;
+font-family: 'Changa One';
 color:#F2F8FD;
 text-shadow: 2px 2px 2px black;
 :hover{
     text-decoration:underline;
-    transform: rotate(3deg);
+    /* transform: rotate(3deg); */
+    transform: scale(1.3);
     font-style: italic;
     
     transition:.5s;
