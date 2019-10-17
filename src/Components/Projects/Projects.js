@@ -35,6 +35,8 @@ align-items:center;
 
 `
 const H1 = styled.h1`
+
+background-image:url(/blob.svg);
 font-size:3rem;
 color:white;
 margin:0px;
