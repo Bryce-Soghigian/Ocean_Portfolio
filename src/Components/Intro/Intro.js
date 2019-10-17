@@ -6,8 +6,10 @@ const IconDiv = styled.div`
 display:flex;
 flex-direction:row;
 justify-content:space-evenly;
-width:15%;
-
+width:7%;
+@media(max-width:500px){
+    width:15%;
+}
 
 /* @media{} */
 
