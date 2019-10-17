@@ -13,9 +13,11 @@ justify-content:center;
 align-items:center;
 width:100%;
 height:665px;
+
 `
 const Card = styled.div`
-width:50%;
+margin-bottom:2%;
+width:40%;
 border-style:solid;
 border-color:#EF965A;
 background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
@@ -24,12 +26,16 @@ display:flex;
 flex-direction:column;
 justify-content:flex-start;
 align-items:center;
+@media  screen and (max-width: 1900px) {
+   width:40%;
 
+}
 `
 const H1 = styled.h1`
 font-size:3rem;
 color:white;
 margin:0px;
+margin-top:2%;
 margin-right:10px;
 margin-bottom:.5%;
 text-shadow: 2px 2px 2px black;
@@ -72,7 +78,8 @@ font-family: 'Changa One';
 }`
 
 const IMG =styled.img`
-width:50%;
+width:100%;
+height: auto;
 `
 
 export default function Experience() {
