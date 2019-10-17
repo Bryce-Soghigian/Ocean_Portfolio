@@ -16,7 +16,7 @@ import styled from 'styled-components';
 const NavContainer = styled.div`
 background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
 width:100%;
-height:65px;
+height:8vh;
 display:flex;
 align-items:center;
 justify-content:space-evenly;
@@ -36,14 +36,8 @@ text-shadow: 2px 2px 2px black;
     
     transition:.5s;
 }
-@media(max-width:800px){
-    
-}
-@media(max-width:500px){
-    font-size: 1rem;
-}
-@media(max-width:375px){
-    font-size: 1rem;
+@media(min-width:1700px){
+    font-size: 2.7rem;
 }
 `
 const ScrollDiv = styled.div`
@@ -53,7 +47,7 @@ border:black;
 border-width: 3px;
 z-index:4;
 align-items:center;
-  height: 60px;
+height:7vh;
   width: 100%;
   background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
 
