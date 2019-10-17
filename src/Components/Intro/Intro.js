@@ -47,6 +47,13 @@ margin:0px;
     font-style: italic; 
     transition:.5s;
 }
+::selection{
+    background:black;
+}
+::-moz-selection {
+ background:black;
+
+}
 `
 const H3 = styled.h3`
 color:white;

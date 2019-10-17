@@ -1,7 +1,7 @@
 import React from 'react';
 import SmoothScroll from 'smooth-scroll';
 import CustomScroll from 'react-custom-scroll';
-import {FaAngleDoubleDown} from "react-icons/fa";
+import {FaAngleDoubleDown, FaAngleDoubleUp} from "react-icons/fa";
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Projects from './Components/Projects/Projects';
@@ -79,7 +79,7 @@ function App() {
       
     <div className="App">
 
-     
+    <section id="Intro">
         <NavContainer>
             <Navitem href="#Experience">
             Experience
@@ -93,7 +93,9 @@ function App() {
             {/* <A href ="r.pdf" download>Resume</A>
         */}
         </NavContainer>
+      
       <Intro/>
+      </section>
       <ScrollDiv>
      
 <Navitem href="#Experience"><FaAngleDoubleDown/></Navitem>
@@ -101,6 +103,9 @@ function App() {
       <section id="Experience">
       <Experience/>
       <ScrollDiv>
+            
+           
+           <Navitem href="#Intro"><FaAngleDoubleUp/></Navitem>
            <Navitem href="#Projects"><FaAngleDoubleDown/></Navitem>
       </ScrollDiv>
       </section>
@@ -108,6 +113,8 @@ function App() {
      <section id="Projects"> 
      <Projects/>
      <ScrollDiv>
+           
+           <Navitem href="#Experience"><FaAngleDoubleUp/></Navitem>
            <Navitem href="#Contact"><FaAngleDoubleDown/></Navitem>
       </ScrollDiv>
      </section>
