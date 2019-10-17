@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import * as Scroll from 'react-scroll';
 import { animateScroll as scroll} from 'react-scroll'
-import { FaAngleDoubleUp,} from 'react-icons/fa';
+import { FaAngleDoubleUp,FaAngleDoubleDown} from 'react-icons/fa';
 import { FaGithubSquare,FaLinkedin } from 'react-icons/fa';
 import {IconButton} from '@chakra-ui/core'
 const ContactDiv = styled.div`
@@ -15,32 +15,25 @@ width:100%;
 height:600px;
 
 `
-const A = styled.a`
-text-decoration:none;
-color:black;
-:visited{
-    color:black;
-}
-:hover{
-    transform: scale(1.75);
-    color:white;
-}
 
-`
 const H1 = styled.h1`
 font-size: 2.5rem;
+display:flex;
+align-items:center;
 color:#FFFA82;
 text-shadow: 2px 2px 2px black;
-font-family: 'Caveat';
+
 :hover{
     font-style: italic;
 
 }
 `
 const H2 = styled.h1`
-color:#DA5F7C;
+display:flex;
+align-items:center;
+color:white;
 text-shadow: 2px 2px 2px black;
-font-family: 'Caveat';
+/* font-family: 'Caveat'; */
 `
 const ScrollDiv = styled.div`
 display:flex;
@@ -56,17 +49,19 @@ align-items:center;
 `
 const Linked = styled.a`
 color:white;
+font-size:2rem;
 :visited{
     color:white;
 }
 :hover{
-    transform: scale(1.75);
+    transform: scale(1.5);
     transition:1s;
     color:#0077B5;
 }
 `
 const Github = styled.a`
 color:white;
+font-size:2rem;
 :visited{
     
     color:white;
@@ -85,9 +80,10 @@ export default function Contact() {
     return (
         <div>
             <ContactDiv>
-                <H2>Contact Me!</H2>
+                {/* <H2>Contact Me Below!</H2>
+                <H2><FaAngleDoubleDown/><FaAngleDoubleDown/></H2>
 <H1>Phone Number: 515-346-8817</H1>
-<H1>Email: bsoghigian@gmail.com</H1>
+<H1>Email: bsoghigian@gmail.com</H1> */}
 
             </ContactDiv>
             <ScrollDiv>

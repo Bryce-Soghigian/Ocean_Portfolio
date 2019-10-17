@@ -19,9 +19,11 @@ height:700px;
 `
 
 const Card = styled.div`
-width:50%;
+width:40%;
 border-style:solid;
 border-color:#E94354;
+margin-top:2%;
+
 /* background-image:linear-gradient(45deg, rgba(229, 128, 66, 0.45) 0%, rgba(229, 128, 66, 0.45) 25%,rgba(212, 160, 112, 0.45) 25%, rgba(212, 160, 112, 0.45) 50%,rgba(195, 191, 157, 0.45) 50%, rgba(195, 191, 157, 0.45) 75%,rgba(178, 223, 203, 0.45) 75%, rgba(178, 223, 203, 0.45) 100%),linear-gradient(135deg, rgb(251, 248, 117) 0%, rgb(251, 248, 117) 25%,rgb(246, 167, 110) 25%, rgb(246, 167, 110) 50%,rgb(240, 85, 102) 50%, rgb(240, 85, 102) 75%,rgb(235, 4, 95) 75%, rgb(235, 4, 95) 100%);
    */
   background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
@@ -33,9 +35,15 @@ align-items:center;
 
 `
 const H1 = styled.h1`
+
+background-image:url(/blob.svg);
+font-size:3rem;
 color:white;
+margin:0px;
+margin-right:10px;
+margin-bottom:.5px;
 text-shadow: 2px 2px 2px black;
-font-family: 'Caveat';
+font-family:'Changa One';
 ::selection {
     background:black;
     
@@ -76,6 +84,14 @@ font-family: 'Changa One';
 `
 const IMG = styled.img`
 width:100%;
+::selection {
+    background:black;
+    
+}
+::-moz-selection {
+ background:black;
+
+}
 `
 const Buttons = styled.div`
 width:75%;
@@ -139,10 +155,10 @@ export default function Projects() {
         <div>
             <ProjectDiv>
                 <H1>Projects</H1>
-                <Tabs variant="soft-rounded" isFitted align="center" variantColor="pink" >
+                <Tabs size="sm" variant="enclosed"  align="center" variantColor="pink" >
   <TabList>
     <Tab>Crime-Stats</Tab>
-    <Tab>UseTechStuff</Tab>
+    <Tab>TechStuff</Tab>
     <Tab>TipsEase</Tab>
   </TabList>
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import SmoothScroll from 'smooth-scroll';
 import CustomScroll from 'react-custom-scroll';
-import {FaAngleDoubleDown} from "react-icons/fa";
+import {FaAngleDoubleDown, FaAngleDoubleUp} from "react-icons/fa";
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Projects from './Components/Projects/Projects';
@@ -25,11 +25,13 @@ flex-direction:row;
 const Navitem = styled(AnchorLink)`
 text-decoration:none;
 text-transform:uppercase;
+font-family: 'Changa One';
 color:#F2F8FD;
 text-shadow: 2px 2px 2px black;
 :hover{
     text-decoration:underline;
-    transform: rotate(3deg);
+    /* transform: rotate(3deg); */
+    transform: scale(1.3);
     font-style: italic;
     
     transition:.5s;
@@ -77,7 +79,7 @@ function App() {
       
     <div className="App">
 
-     
+    <section id="Intro">
         <NavContainer>
             <Navitem href="#Experience">
             Experience
@@ -91,7 +93,9 @@ function App() {
             {/* <A href ="r.pdf" download>Resume</A>
         */}
         </NavContainer>
+      
       <Intro/>
+      </section>
       <ScrollDiv>
      
 <Navitem href="#Experience"><FaAngleDoubleDown/></Navitem>
@@ -99,6 +103,9 @@ function App() {
       <section id="Experience">
       <Experience/>
       <ScrollDiv>
+            
+           
+           <Navitem href="#Intro"><FaAngleDoubleUp/></Navitem>
            <Navitem href="#Projects"><FaAngleDoubleDown/></Navitem>
       </ScrollDiv>
       </section>
@@ -106,6 +113,8 @@ function App() {
      <section id="Projects"> 
      <Projects/>
      <ScrollDiv>
+           
+           <Navitem href="#Experience"><FaAngleDoubleUp/></Navitem>
            <Navitem href="#Contact"><FaAngleDoubleDown/></Navitem>
       </ScrollDiv>
      </section>

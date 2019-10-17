@@ -27,9 +27,13 @@ align-items:center;
 
 `
 const H1 = styled.h1`
+font-size:3rem;
 color:white;
+margin:0px;
+margin-right:10px;
+margin-bottom:.5%;
 text-shadow: 2px 2px 2px black;
-font-family: 'Caveat';
+font-family:'Changa One';
 ::selection {
     background:black;
     
