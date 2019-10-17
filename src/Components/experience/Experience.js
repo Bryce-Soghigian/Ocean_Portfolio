@@ -12,7 +12,8 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 width:100%;
-height:665px;
+/* height:665px; */
+height:99vh;
 
 `
 const Card = styled.div`

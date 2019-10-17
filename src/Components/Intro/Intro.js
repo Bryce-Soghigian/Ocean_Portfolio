@@ -10,6 +10,9 @@ width:7%;
 @media(max-width:500px){
     width:15%;
 }
+@media(max-width:1700px){
+    width:20%;
+}
 
 /* @media{} */
 
@@ -23,7 +26,7 @@ justify-content:space-evenly;
 align-items:center;
 align-content:center;
 width:100%;
-height:600px;
+height:87vh;
 `
 // const Button = styled.button`
 // width: 100px;
@@ -54,12 +57,36 @@ margin:0px;
  background:black;
 
 }
+/* @media(min-width:500px){
+font-size: 4.3rem;
+}
+@media(min-width:800px){
+font-size: 6.7rem;
+} */
+@media(min-width:1700px){
+    font-size: 15rem;
+}
 `
-const H3 = styled.h3`
+const H3 = styled.h1`
 color:white;
 text-shadow: 2px 2px 2px black;
 margin:0px;
 font-family:'Changa One';
+/* @media(min-width:500px){
+font-size: 2rem;
+}
+@media(min-width:800px){
+font-size: 3.5rem;
+} */
+/* @media(max-width:1200px){
+    font-size: 7rem;
+}
+@media(max-width:1400px){
+    font-size: 8.5rem;
+} */
+@media(min-width:1700px){
+    font-size: 5rem;
+}
 :hover{
     font-style: italic;
     /* transform: scale(1.75);
@@ -88,6 +115,9 @@ color:white;
     transition:1s;
     color:#0077B5;
 }
+@media(min-width:1700px){
+    font-size: 5rem;
+}
 `
 const Github = styled.a`
 color:white;
@@ -101,6 +131,9 @@ font-size:2rem;
     transform: scale(1.25);
     transition:.7s;
     color:black;
+}
+@media(min-width:1700px){
+    font-size: 5rem;
 }
 `
 
