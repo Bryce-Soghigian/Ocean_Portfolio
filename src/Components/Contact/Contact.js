@@ -5,6 +5,7 @@ import { animateScroll as scroll} from 'react-scroll'
 import { FaAngleDoubleUp,FaAngleDoubleDown} from 'react-icons/fa';
 import { FaGithubSquare,FaLinkedin } from 'react-icons/fa';
 import {IconButton} from '@chakra-ui/core'
+import ContactForm from './ContactForm';
 const ContactDiv = styled.div`
     background-image:linear-gradient(45deg, rgba(229, 128, 66, 0.45) 0%, rgba(229, 128, 66, 0.45) 25%,rgba(212, 160, 112, 0.45) 25%, rgba(212, 160, 112, 0.45) 50%,rgba(195, 191, 157, 0.45) 50%, rgba(195, 191, 157, 0.45) 75%,rgba(178, 223, 203, 0.45) 75%, rgba(178, 223, 203, 0.45) 100%),linear-gradient(135deg, rgb(251, 248, 117) 0%, rgb(251, 248, 117) 25%,rgb(246, 167, 110) 25%, rgb(246, 167, 110) 50%,rgb(240, 85, 102) 50%, rgb(240, 85, 102) 75%,rgb(235, 4, 95) 75%, rgb(235, 4, 95) 100%);
     display:flex;
@@ -80,10 +81,7 @@ export default function Contact() {
     return (
         <div>
             <ContactDiv>
-                {/* <H2>Contact Me Below!</H2>
-                <H2><FaAngleDoubleDown/><FaAngleDoubleDown/></H2>
-<H1>Phone Number: 515-346-8817</H1>
-<H1>Email: bsoghigian@gmail.com</H1> */}
+<ContactForm/>
 
             </ContactDiv>
             <ScrollDiv>

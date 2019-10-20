@@ -24,6 +24,7 @@ flex-direction:row;
 `
 const Navitem = styled(AnchorLink)`
 text-decoration:none;
+margin-right:1%;
 text-transform:uppercase;
 font-family: 'Changa One';
 color:#F2F8FD;
