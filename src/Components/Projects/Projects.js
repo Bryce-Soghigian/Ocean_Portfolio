@@ -15,7 +15,7 @@ justify-content:center;
 align-items:center;
 width:100%;
 /* height:auto; */
-height:87vh;
+height:94vh;
 
 `
 
@@ -108,6 +108,34 @@ color:black;
     color:black;
 }
 `
+const Buttonz = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+padding-right:3px;
+padding-left:3px;
+font-size:.8rem;
+text-transform:uppercase;
+text-decoration:none;
+text-align:center;
+vertical-align:center;
+height:25px;
+border-radius:5%;
+border-style:solid;
+border-color:black;
+background:#EAD174;
+color:white;
+/* color:#DA5F7C; */
+
+font-family:'Changa One';
+:hover{
+    
+    transform: rotate(-10deg);
+    font-style: italic;
+}
+
+
+`
 const Button = styled.div`
 display:flex;
 justify-content:center;
@@ -177,7 +205,7 @@ export default function Projects() {
 
                 </Description>
                 <Buttons>
-                    <Button><A href="https://www.notion.so/Crime-Statistics-for-Travelers-a7e69847024d4cdc85aaf85cb413df71" target="_blank">PVD</A></Button>
+                    <Buttonz><A href="https://www.notion.so/Crime-Statistics-for-Travelers-a7e69847024d4cdc85aaf85cb413df71" target="_blank">PVD</A></Buttonz>
                     <Button ><A href="https://github.com/Lambda-School-Labs/crime-statistics-for-travelers-fe" target="_blank">CODE</A></Button>
                     <Button><A href="https://crime-statistics-master.netlify.com/" target="_blank">Demo</A></Button>
                 </Buttons>

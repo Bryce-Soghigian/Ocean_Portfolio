@@ -13,7 +13,7 @@ justify-content:center;
 align-items:center;
 width:100%;
 /* height:665px; */
-height:99vh;
+height:94vh;
 
 `
 const Card = styled.div`

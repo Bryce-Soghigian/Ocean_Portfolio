@@ -47,8 +47,14 @@ const TextArea = styled.textarea`
  margin:1em;
  width:20em;
 height:17vh;
+&:focus {
+    outline-color:#E15067;
+}
 `
 const Input = styled.input`
+&:focus {
+    outline-color:#E15067;
+}
 margin:5%;
 width:20em;
 height:3vh;
