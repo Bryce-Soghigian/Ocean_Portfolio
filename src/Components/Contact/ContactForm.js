@@ -2,6 +2,10 @@ import React,{useState} from 'react'
 import axios from 'axios';
 import styled from 'styled-components';
 import Swal from 'sweetalert2';
+import * as Yup from "yup";
+const H5 = styled.h6`
+  color:white;
+`;
 const H1 = styled.h1`
 font-size:3rem;
 color:white;
@@ -36,27 +40,51 @@ align-items:center; */
  justify-content: space-evenly;
  /* box-shadow: 0px 12px 22px -1px #545309; */
  font-family: "Ubuntu", sans-serif;
+ ::selection{
+    background:#F5A552;
+}
+::-moz-selection {
+ background:#F5A552;
+
+}
 `
 const TopForm = styled.div`
 display:flex;
 flex-direction:column;
-justify-content:flex-start;
+
+justify-content:center;
+
 margin:.5em;
+
 `
 const TextArea = styled.textarea`
- margin:1em;
- width:20em;
+margin:4%;
+ width:50vw;
 height:17vh;
+::selection{
+    background:black;
+}
+::-moz-selection {
+ background:#F5A552;
+
+}
 &:focus {
-    outline-color:#E15067;
+    outline-color:#F5A552;
 }
 `
 const Input = styled.input`
 &:focus {
-    outline-color:#E15067;
+  outline-color:#F5A552;
 }
-margin:5%;
-width:20em;
+::selection{
+    background:#F5A552;
+}
+::-moz-selection {
+ background:#F5A552;
+
+}
+margin:4%;
+width:50vw;
 height:3vh;
 `
 const Center=styled.div`
@@ -66,7 +94,7 @@ align-items:center;
 `
 const Button = styled.button`
 margin:1em;
-width:7rem;
+width:9vw;
 border-style:solid;
 border-color:black;
 background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
@@ -79,7 +107,7 @@ border-color:white;
  transition:.5s;
 }
 `
-export default function ContactForm() {
+export default function ContactForm({touched,errors}) {
  const [inputValue, setInputValue] = useState({
  name: "",
  email:"",
@@ -107,12 +135,18 @@ export default function ContactForm() {
    }).catch((err) => {
 console.error(err)
    })
+   validationSchema: Yup.object().shape({
+    name: Yup.string()
+      .required("This field is required")
+    // passwordConfirmation: Yup.string()
+    // .oneOf([Yup.ref('password'), null], 'Passwords must match'),
+  })
    Swal.fire({
      position: 'center',
      type: 'success',
      title: 'Thank You For Reaching Out!',
      showConfirmButton: false,
-     timer: 1000
+     timer: 1500
    })
  };
  return (
@@ -121,7 +155,8 @@ console.error(err)
      <form onSubmit={event => handleSubmit(event)}>
      <FormContainer>
 <TopForm>
-         <Input type="text" onChange={event => changeHandler(event)} placeholder="Name"/>
+         <Input name="name" id="name" type="text" onChange={event => changeHandler(event)} placeholder="Name"/>
+         {/* <H5>{touched. && errors.text}</H5> */}
          <Input type = "text" onChange={event => companyHandler(event)}placeholder = "Company"/>
          <Input type="text" onChange={event => emailHandler(event)} placeholder="Email"/>
          <TextArea type="text" onChange={event => responseHandler(event)} placeholder="message"/>

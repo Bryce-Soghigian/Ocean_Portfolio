@@ -46,10 +46,7 @@ color:white;
 text-shadow: 2px 2px 2px black;
 font-family:'caveat';
 margin:0px;
-:hover{
-    font-style: italic; 
-    transition:.5s;
-}
+
 ::selection{
     background:black;
 }
@@ -87,11 +84,7 @@ font-size: 3.5rem;
 @media(min-width:1700px){
     font-size: 5rem;
 }
-:hover{
-    font-style: italic;
-    /* transform: scale(1.75);
-    transition:.5s; */
-}
+
 ::selection{
     background:black;
 }
