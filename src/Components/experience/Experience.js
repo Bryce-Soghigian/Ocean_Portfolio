@@ -36,6 +36,7 @@ const H1 = styled.h1`
 font-size:3rem;
 color:white;
 margin:0px;
+margin:5px;
 margin-top:2%;
 margin-right:10px;
 margin-bottom:.5%;
@@ -64,11 +65,22 @@ font-family: 'Caveat';
 
 }
 `
+const CardWrapper = styled.div`
+display:flex;
+justify-content:center;
+flex-direction:column;
+align-items:center;
+
+width:100%;
+height:54vh;
+
+`
 const Description = styled.p`
 color:white;
 /* color:#EAD174; */
 text-shadow: 1px 1px 1px black;
 font-family: 'Changa One';
+
 ::selection {
     background:black;
     
@@ -87,12 +99,15 @@ export default function Experience() {
     return (
         <div>
             <ExperienceDiv>
+            <CardWrapper>
                 <H1>Experience</H1>
+                
                 <Card>
                 <H2>Appect Software</H2>
                 <IMG src={Appect} alt="If you are seeing this text it means the image broke"/>
                 <Description id="blob">Working as a fullstack developer to build out a communications application that has the combined functionality of Trello, Asana, Slack,and Google Calendar.The backend was built with NodeJS and the frontend is being built out with ReactJS.</Description>
                 </Card>
+                </CardWrapper>
             </ExperienceDiv>
 
         </div>
