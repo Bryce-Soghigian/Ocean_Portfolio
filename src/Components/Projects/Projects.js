@@ -203,7 +203,7 @@ export default function Projects() {
 <Center>
     <Card>
                 <H2>Crime Statistics For Travelers</H2>
-                <IMG src = {Crime}/>
+                <IMG src = {Crime} alt="If you are seeing this text it means the image broke"/>
                 <Description>Planned, Released, and Launched A Crime Statistics Application I built with a team of developers. 
                 It Has Geolocation,Data Visualization,Google Authentication, data manipulation and filtering,
                 and much more. Check out the links below for more info
@@ -222,7 +222,7 @@ export default function Projects() {
     <Center>
     <Card>
                 <H2>Use My Techstuff API</H2>
-                <IMG src = {Laptop}/>
+                <IMG src = {Laptop} alt="If you are seeing this text it means the image broke"/>
                 <Description>Built out an API with NODEJS, Express, KnexJS, and Postgres. The Api was for a frontend development team,
                 Some of the endpoints include basic crud endpoints,Payment integration with stripe, Authentication,and Image Uploading.
                 </Description>
@@ -238,7 +238,7 @@ export default function Projects() {
     <Center>
     <Card>
                 <H2>TipsEase</H2>
-                <IMG src = {Tips}/>
+                <IMG src = {Tips} alt="If you are seeing this text it means the image broke"/>
                 <Description>Built out a mock Tipping Application.I used React and Context Api. Has Crud Operations, Sorting Functionality
                     ,and Authentication. To Login Use the Following Password
                     <Red>    Username:Bryce     </Red>
