@@ -25,6 +25,7 @@ flex-direction:row;
 const Navitem = styled(AnchorLink)`
 text-decoration:none;
 margin-right:1%;
+font-size:1rem;
 text-transform:uppercase;
 font-family: 'Changa One';
 color:#F2F8FD;
@@ -36,6 +37,9 @@ text-shadow: 2px 2px 2px black;
     font-style: italic;
     
     transition:.5s;
+}
+@media(min-width:1200px){
+    font-size: 1.7rem;
 }
 @media(min-width:1700px){
     font-size: 2.7rem;
