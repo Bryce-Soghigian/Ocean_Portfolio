@@ -58,8 +58,13 @@ margin:.5em;
 
 `
 const TextArea = styled.textarea`
+border-style:solid;
+border-color:#E7A46F;
+font-family: 'Bowlby One SC';
+color:black;
 margin:4%;
  width:50vw;
+ resize: none;
 height:17vh;
 ::selection{
     background:black;
@@ -73,6 +78,9 @@ height:17vh;
 }
 `
 const Input = styled.input`
+border-style:solid;
+border-color:white;
+font-family: 'Bowlby One SC';
 &:focus {
   outline-color:#F5A552;
 }
