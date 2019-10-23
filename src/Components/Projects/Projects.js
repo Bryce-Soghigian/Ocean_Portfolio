@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/core";
 import {FaAngleDoubleDown} from "react-icons/fa";
 import {IconButton} from '@chakra-ui/core'
+import '../../App.css'
 import Laptop from './Laptop.png'
 import Crime from './Crime.png';
 import Tips from './Tips.png'
@@ -20,7 +21,7 @@ height:94vh;
 `
 
 const Card = styled.div`
-width:40%;
+width:100%;
 border-style:solid;
 border-color:#E94354;
 margin-bottom:2%;
@@ -33,6 +34,10 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+
+`
+const Fit = styled.div`
+width:40%;
 
 `
 const H1 = styled.h1`
@@ -185,8 +190,9 @@ export default function Projects() {
         <div>
             <ProjectDiv>
                 <H1>Projects</H1>
-                <Tabs size="sm" variant="enclosed"  align="center" variantColor="pink" >
-  <TabList>
+                <Fit>
+                <Tabs isFitted size="sm" variant="enclosed"  align="center" variantColor="pink" >
+  <TabList id="No-Border">
     <Tab>Crime-Stats</Tab>
     <Tab>TechStuff</Tab>
     <Tab>TipsEase</Tab>
@@ -249,7 +255,7 @@ export default function Projects() {
     </TabPanel>
   </TabPanels>
 </Tabs>
-
+</Fit>
 
             </ProjectDiv>
 
