@@ -90,7 +90,7 @@ export default function Experience() {
                 <H1>Experience</H1>
                 <Card>
                 <H2>Appect Software</H2>
-                <IMG src={Appect}/>
+                <IMG src={Appect} alt="If you are seeing this text it means the image broke"/>
                 <Description id="blob">Working as a fullstack developer to build out a communications application that has the combined functionality of Trello, Asana, Slack,and Google Calendar.The backend was built with NodeJS and the frontend is being built out with ReactJS.</Description>
                 </Card>
             </ExperienceDiv>
