@@ -42,6 +42,12 @@ margin-right:10px;
 margin-bottom:.5%;
 text-shadow: 2px 2px 2px black;
 font-family:'Changa One';
+@media(min-width:800px){
+    font-size:3.2rem;
+}
+@media(min-width:1000px){
+    font-size:3.3rem;
+}
 ::selection {
     background:black;
     
@@ -52,6 +58,7 @@ font-family:'Changa One';
 }
 `
 const H2= styled.h2`
+font-style:1rem;
 color:white;
 font-style: bold;
 /* text-shadow: 2px 2px 2px black; */

@@ -19,6 +19,17 @@ width:100%;
 height:94vh;
 
 `
+const ProjectWrapper = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:100%;
+/* height:auto; */
+height:89vh;
+margin-top:2%;
+margin-bottom:2%;
+`
 
 const Card = styled.div`
 width:100%;
@@ -189,6 +200,7 @@ export default function Projects() {
     return (
         <div>
             <ProjectDiv>
+                <ProjectWrapper>
                 <H1>Projects</H1>
                 <Fit>
                 <Tabs isFitted size="sm" variant="enclosed"  align="center" variantColor="#FC8181" >
@@ -256,6 +268,7 @@ export default function Projects() {
   </TabPanels>
 </Tabs>
 </Fit>
+</ProjectWrapper>
 
             </ProjectDiv>
 
