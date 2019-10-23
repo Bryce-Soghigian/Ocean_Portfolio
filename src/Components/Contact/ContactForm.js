@@ -58,8 +58,13 @@ margin:.5em;
 
 `
 const TextArea = styled.textarea`
+border-style:solid;
+border-color:#E7A46F;
+font-family: 'Bowlby One SC';
+color:black;
 margin:4%;
  width:50vw;
+ resize: none;
 height:17vh;
 ::selection{
     background:black;
@@ -73,6 +78,9 @@ height:17vh;
 }
 `
 const Input = styled.input`
+border-style:solid;
+border-color:white;
+font-family: 'Bowlby One SC';
 &:focus {
   outline-color:#F5A552;
 }
@@ -93,8 +101,10 @@ justify-content:center;
 align-items:center;
 `
 const Button = styled.button`
+font-size:.7rem;
 margin:1em;
 width:9vw;
+height:3vh;
 border-style:solid;
 border-color:black;
 background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
