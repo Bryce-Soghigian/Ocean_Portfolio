@@ -93,8 +93,10 @@ justify-content:center;
 align-items:center;
 `
 const Button = styled.button`
+font-size:.7rem;
 margin:1em;
 width:9vw;
+height:3vh;
 border-style:solid;
 border-color:black;
 background-image:linear-gradient(135deg, rgb(245, 177, 77),rgb(237, 53, 115));
