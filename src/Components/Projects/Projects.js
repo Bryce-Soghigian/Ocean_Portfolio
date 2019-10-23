@@ -37,7 +37,7 @@ align-items:center;
 
 `
 const Fit = styled.div`
-width:40%;
+width:45%;
 
 `
 const H1 = styled.h1`
@@ -191,9 +191,9 @@ export default function Projects() {
             <ProjectDiv>
                 <H1>Projects</H1>
                 <Fit>
-                <Tabs isFitted size="sm" variant="enclosed"  align="center" variantColor="pink" >
+                <Tabs isFitted size="sm" variant="enclosed"  align="center" variantColor="#FC8181" >
   <TabList id="No-Border">
-    <Tab>Crime-Stats</Tab>
+    <Tab>CrimeStats</Tab>
     <Tab>TechStuff</Tab>
     <Tab>TipsEase</Tab>
   </TabList>
