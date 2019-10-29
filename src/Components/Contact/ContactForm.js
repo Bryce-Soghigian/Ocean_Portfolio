@@ -61,7 +61,7 @@ const TextArea = styled.textarea`
 border-style:solid;
 border-color:#E7A46F;
 font-family: 'Bowlby One SC';
-color:black;
+
 margin:4%;
  width:50vw;
  resize: none;
