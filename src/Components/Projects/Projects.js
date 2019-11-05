@@ -225,7 +225,7 @@ export default function Projects() {
                 <Buttons>
                     <Buttonz><A href="https://www.notion.so/Crime-Statistics-for-Travelers-a7e69847024d4cdc85aaf85cb413df71" target="_blank">PVD</A></Buttonz>
                     <Button ><A href="https://github.com/Lambda-School-Labs/crime-statistics-for-travelers-fe" target="_blank">CODE</A></Button>
-                    <Button><A href="https://crime-statistics-master.netlify.com/" target="_blank">Demo</A></Button>
+                    <Button><A href="https://crimestatsfortravelers.com/" target="_blank">Demo</A></Button>
                 </Buttons>
                 </Card>
                 </Center>
