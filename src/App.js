@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef,useEffect} from 'react';
 import SmoothScroll from 'smooth-scroll';
 import CustomScroll from 'react-custom-scroll';
 import {FaAngleDoubleDown, FaAngleDoubleUp} from "react-icons/fa";
@@ -6,7 +6,7 @@ import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import Projects from './Components/Projects/Projects';
 import Intro from './Components/Intro/Intro';
-
+import * as THREE from "three";
 import { ThemeProvider } from "@chakra-ui/core";
 import Experience from './Components/experience/Experience';
 import Contact from './Components/Contact/Contact';
@@ -72,6 +72,26 @@ text-shadow: 2px 2px 2px black;
 `
 
 function App() {
+  const refContainer = useRef();
+  useEffect(() => {
+    var scene = new THREE.Scene();
+    var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+    var renderer = new THREE.WebGLRenderer();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    document.body.appendChild( renderer.domElement );
+    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
+    var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+    var cube = new THREE.Mesh( geometry, material );
+    scene.add( cube );
+    camera.position.z = 5;
+    var animate = function () {
+      requestAnimationFrame( animate );
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+      renderer.render( scene, camera );
+    };
+    animate();
+  }, [refContainer])
  
   return (
     <ThemeProvider>
@@ -121,7 +141,7 @@ function App() {
         <Contact/>
         
       </section>
-
+      <div ref={refContainer}></div>
     </div>
     </ThemeProvider>
   );
