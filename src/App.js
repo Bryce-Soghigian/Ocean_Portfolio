@@ -1,9 +1,6 @@
 import React,{useRef,useEffect} from 'react';
-import SmoothScroll from 'smooth-scroll';
-import CustomScroll from 'react-custom-scroll';
 import {FaAngleDoubleDown, FaAngleDoubleUp} from "react-icons/fa";
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
 import Projects from './Components/Projects/Projects';
 import Intro from './Components/Intro/Intro';
 import * as THREE from "three";
@@ -45,6 +42,10 @@ text-shadow: 2px 2px 2px black;
     font-size: 2.7rem;
 }
 `
+const H1 = styled.h1`
+color:white;
+
+`
 const ScrollDiv = styled.div`
 display:flex;
 justify-content:center;
@@ -75,19 +76,33 @@ function App() {
   const refContainer = useRef();
   useEffect(() => {
     var scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xF0965A);
     var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
     var renderer = new THREE.WebGLRenderer();
+    renderer.gammaFactor = 2.2;
+renderer.gammaOutput = false;
     renderer.setSize( window.innerWidth, window.innerHeight );
     document.body.appendChild( renderer.domElement );
-    var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-    var cube = new THREE.Mesh( geometry, material );
-    scene.add( cube );
+    // const colorMap = new TextureLoader().load( './Pepe.jpeg' );
+    var new_geometry = new THREE.BoxGeometry(3,3,3)
+    var new_Material = new THREE.MeshBasicMaterial({color: 0xE15067})
+    // var sun_geometry = new THREE.ConeBufferGeometry(20,10 ,20)
+    // var sun_geometry = new THREE.IcosahedronBufferGeometry(2,1 ,2)
+    // var blue_Material = new THREE.MeshBasicMaterial({color:0xEE466F})
+    // var sun_Material = new THREE.MeshBasicMaterial({color:0xF2C35F})
+    // var sun = new THREE.Mesh(sun_geometry,sun_Material)
+    var ring = new THREE.Mesh(new_geometry,new_Material)
+    // scene.add(sun)
+    scene.add(ring)
     camera.position.z = 5;
     var animate = function () {
       requestAnimationFrame( animate );
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
+      // sun.rotation.x += 100.09;
+      // sun.rotation.y += 100000.09;
+      // sun.rotation.z += 100;
+      ring.rotation.x += .010;
+      ring.rotation.y += .010;
+      ring.rotation.z += .0010;
       renderer.render( scene, camera );
     };
     animate();
@@ -141,7 +156,9 @@ function App() {
         <Contact/>
         
       </section>
-      <div ref={refContainer}></div>
+      <div ref={refContainer}>
+
+      </div>
     </div>
     </ThemeProvider>
   );
