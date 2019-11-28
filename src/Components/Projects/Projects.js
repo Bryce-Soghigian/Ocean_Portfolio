@@ -250,7 +250,7 @@ export default function Projects() {
     <TabPanel>
     <Center>
     <Card>
-                <H2>TipsEase</H2>
+                <H2>CMT</H2>
                 <IMG src = {Game} alt="If you are seeing this text it means the image broke"/>
                 <Description>
                     Built out a desktop puzzle game. I used THREEJS and React on the Frontend and used Django on the backend. To navigate the TV channels use the arrow up and arrow down keys. To enter in the secret code to the game just type in the right number in the right channel. Good luck!
